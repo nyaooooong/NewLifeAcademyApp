@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReadBible by Navigator</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Progressive Web App progressing">
+    <meta name="theme-color" content="#3E4EB8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/icons/menu_book-512px.png">
+
+    <link rel="shortcut icon" href="/icons/menu_book-48px.png">
+    <link rel="manifest" href="readbible.webmanifest">
+	
+    <!-- Below 4 lines For Safari. Apple needs non transparent icon unlike android -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ReadBible">
+    <link rel="apple-touch-icon" href="/icons/menu_book-512px_bg.png">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+	<!-- import the webpage's javascript file --> 
+	<script src="/script.js" defer></script> 
+  </head>  
+  <body onload="init();">
+	  <nav class="menu"> <!-- menu is starting point of CSS selector -->
+		  <ul class="active"> <!-- active is used to toogle -->
+			  <li class="current-item"><a href="#">Home</a></li> <!-- current-item is highlighted by CSS -->
+			  <li><a href="#">My Work</a></li>
+			  <li><a href="#">About Me</a></li>
+			  <li><a href="#">Get in Touch</a></li>
+			  <li><a href="#">Blog</a></li>
+		  </ul>
+		  <a class="toggle-nav" href="#">&#9776;</a>
+		  <form class="search-form">
+			  <input type="text">
+			  <button>Search</button>
+		  </form>
+	  </nav>
+	  <h1>Read Bible by Navigator</h1>
+	  <table id="table">
+	  </table>
+  </body>
+</html>

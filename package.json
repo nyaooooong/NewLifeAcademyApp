@@ -1,0 +1,28 @@
+{
+  "name": "nlaa",
+  "version": "1.0.0",
+  "description": "New Life Academy App",
+  "main": "server.js",
+  "scripts": {
+	"start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyaooooong/NewLifeAcademyApp.git"
+  },
+  "keywords": [
+    "New",
+    "Life",
+    "Academy"
+  ],
+  "author": "NMN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyaooooong/NewLifeAcademyApp/issues"
+  },
+  "homepage": "https://github.com/nyaooooong/NewLifeAcademyApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
